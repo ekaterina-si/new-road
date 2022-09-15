@@ -1,0 +1,175 @@
+/*===============================================================
+============= HOME-SECTION ======================================
+===============================================================*/
+.home-section .btn {
+  background-image: url(../img/Call.svg);
+  background-repeat: no-repeat;
+  background-position: right 7px center;
+  padding-left: 3rem;
+  padding-right: 4.1875rem;
+}
+
+/*===============================================================
+============= SERVICES-SECTION ==================================
+===============================================================*/
+.services-section {
+  padding: 4.75rem 0;
+  margin-bottom: 6rem;
+  background-color: #F5F7FC;
+  border-radius: 0px 0px 40px 40px;
+}
+
+.services-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  display: block;
+  width: 100%;
+  height: 8px;
+  background: linear-gradient(270deg, #003AAA -4.28%, #4F92E5 101.92%);
+  border-radius: 26px;
+}
+
+.services-section-container {
+  width: 83%;
+  margin: 0 auto;
+}
+
+.services-item-img {
+  position: absolute;
+  height: 100%;
+  width: 48.81%;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.services-section-item:not(:last-child) {
+  margin-bottom: 5rem;
+}
+
+.services-section-container {
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 29rem;
+  align-items: center;
+}
+
+.services-section-item:nth-child(odd) .services-item-img {
+  left: 0;
+  border-radius: 0 25rem 25rem 0;
+}
+
+.services-section-item:nth-child(even) .services-item-img {
+  right: 0;
+  border-radius: 25rem 0 0 25rem;
+}
+
+.services-section-item:nth-child(even) .empty-column {
+  order: 2;
+}
+
+.services-item-content .price {
+  color: #3A6ACB;
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+.services-item-content .btn {
+  position: relative;
+  margin-top: 2.5rem;
+  z-index: 5;
+}
+
+
+/*===============================================================
+============= @MEDIA ============================================
+===============================================================*/
+/*============================================
+============= < 1200px =======================
+============================================*/
+@media (max-width: 1200px) {
+  .home-section {
+    background-image: url(../img/services-home-img.jpg);
+    background-position: center top;
+  }
+
+  .home-title-content .home-title h1,
+  .home-title-content .home-title p {
+    color: #1c2229;
+  }
+
+  .home-section .title-text {
+    display: none;
+  }
+
+  .services-container.container {
+    margin-top: 5rem;
+  }
+}
+
+
+/*============================================
+======= < 992px ==============================
+=============================================*/
+@media (max-width: 992px) {
+  .services-section {
+    margin-bottom: 0;
+    border-radius: 0;
+  }
+
+  .services-section::before {
+    display: none;
+  }
+
+  .services-container.container {
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .services-section-container {
+    grid-template-rows: auto;
+  }
+
+  .services-section .services-section-item {
+    margin-bottom: 16.5rem;
+  }
+
+  .services-section .services-section-item:last-child {
+    margin-bottom: 10.8125rem;
+  }
+
+  .services-section-item .empty-column {
+    display: none;
+  }
+
+  .services-item-img {
+    height: 12.5rem;
+    width: 100%;
+    top: calc(100% - 27px);
+  }
+
+  .services-section-item:nth-child(odd) .services-item-img {
+    border-radius: 0px 0px 100.5px 0px;
+  }
+
+  .services-section-item:nth-child(even) .services-item-img {
+    border-radius: 0px 0px 0px 100.5px;
+  }
+}
+
+
+/*============================================
+============= < 768px ========================
+============================================*/
+@media (max-width: 768px) {
+  .services-section-container {
+    grid-template-columns: 1fr;
+  }
+
+  .services-item-content .btn {
+    display: block;
+  }
+}

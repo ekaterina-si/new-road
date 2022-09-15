@@ -1,0 +1,129 @@
+.page-title {
+  padding: 6.375rem 0 12rem;
+  background-image: url(../img/question-bg.svg), linear-gradient(316.99deg, #003AAA 35.77%, #4F92E5 99.9%);
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: cover;
+}
+
+.page-title h1,
+.page-title h1 + p {
+  color: #fff;
+}
+
+.gallery-section {
+  margin-top: -7.5rem;
+}
+
+.gallery-section .gallery-img {
+  width: 100%;
+  height: 560px;
+  object-fit: cover;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+}
+
+.miniature-container {
+  display: flex;
+  overflow-x: auto;
+}
+
+.gallery-img-mini {
+  position: relative;
+  width: 114px;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  overflow: hidden;
+  border: 3px solid transparent;
+}
+
+.gallery-img-mini.active {
+  border-color: #3A6ACB;
+}
+
+.gallery-img-mini img {
+  width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+}
+
+.gallery-img-mini::after {
+  content: '';
+  display:block;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(0deg, rgba(12, 71, 179, 0.4), rgba(12, 71, 179, 0.4));
+  transition: opacity 0.4s ease;
+}
+
+.gallery-img-mini:hover::after {
+  opacity: 1;
+}
+
+.gallery-img-mini:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.how-section {
+  padding: 5.9rem 0 3rem;
+}
+
+.how-section h6 {
+  font-weight: 700;
+}
+
+.how-section ul,
+.how-section p {
+  font-weight: 400;
+}
+
+.how-section h2 {
+  margin-bottom: 2rem;
+}
+
+.why-section h2 + p {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 6rem;
+  color: #444656;
+}
+
+.why-section .btn-container {
+  display: grid;
+  grid-template-columns: 183px 258px;
+  grid-gap: 30px;
+  justify-content: center;
+  margin-bottom: 4.3125rem;
+}
+
+
+/*==========================================================
+======= @ MEDIA ============================================
+===========================================================*/
+/*============================================
+======= < 1200px =============================
+=============================================*/
+@media (min-width: 1200px) {
+  .how-section .container,
+  .gallery-section .container,
+  .why-section .container {
+    max-width: 1080px;
+  }
+}
+
+/*============================================
+======= < 567px ==============================
+=============================================*/
+@media (max-width: 576px) {
+  .gallery-section .gallery-img {
+    height: 20rem;
+  }
+
+  .why-section .btn-container {
+    grid-template-columns: 1fr;
+  }
+}

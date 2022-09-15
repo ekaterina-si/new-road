@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Нью Роуд</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/basic.css">
+  <link rel="stylesheet" href="css/objects.css">
+</head>
+<body>
+
+<!--====================================================================
+================== HEADER ==============================================
+=====================================================================-->
+  <header class="navbar navbar-expand-xxl">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">
+        <img src="img/logo.png" alt="logo">
+      </a>
+      <button class="navbar-toggler" type="button">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="menu">
+        <div class="container">
+          <nav>
+            <div class="menu-link">
+              <a href="our-services.html">Услуги и цены</a>
+              <button class="dropdown-btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#services" aria-expanded="false" aria-controls="services"></button>
+            </div>
+            <div class="collapse drop" id="services">
+              <div class="menu-link">
+                <a href="asphalting.html">Асфальтирование</a>
+                <button class="dropdown-btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#asphalting-links" aria-expanded="false" aria-controls="asphalting-links"></button>
+              </div>
+              <div class="collapse drop" id="asphalting-links">
+                <a class="menu-link" href="#">Какая-то ссылка</a>
+                <a class="menu-link" href="#">Какая-то ссылка</a>
+                <a class="menu-link" href="#">Какая-то ссылка</a>
+                <a class="menu-link" href="#">Какая-то ссылка</a>
+                <a class="menu-link" href="#">Какая-то ссылка</a>
+              </div>
+              <div class="menu-link">
+                <a href="#">Ремонт дорог</a>
+              </div>
+              <div class="menu-link">
+                <a href="#">Благоустройство и озеленение</a>
+              </div>
+              <div class="menu-link">
+                <a href="#">Земляные работы</a>
+              </div>
+              <div class="menu-link">
+                <a href="#">Уборка и вывоз снега</a>
+              </div>
+              <div class="menu-link">
+                <a href="#">Подготовительные работы</a>
+              </div>
+            </div>
+            <div class="menu-link">
+              <a href="about.html">О компании</a>
+            </div>
+            <div class="menu-link">
+              <a href="#steps">Этапы работы</a>
+            </div>
+            <div class="menu-link">
+              <a href="#calc">Расчет стоимости</a>
+            </div>
+            <div class="menu-link">
+              <a href="#">Сертификаты и лицензии</a>
+            </div>
+            <div class="menu-link">
+              <a href="objects.html">Сданные объекты</a>
+            </div>
+          </nav>
+          <div class="menu-contacts">
+            <p>Режим работы:</p>
+            <span>Будние дни с 9:00 до 19:00</span>
+            <span>Выходные дни с 10:00 до 15:00</span>
+            <a class="phone" href="tel:84994082423">
+              <img src="img/phone-black-icon.svg" alt="">
+              +7 (499) 408-24-23
+            </a>
+            <a href="malito:e-mail@newroud.ru">
+              <img src="img/email-black-icon.svg" alt="">
+              e-mail@newroud.ru
+            </a>
+            <div class="social">
+              <a href="#"><img src="img/vk.svg" alt=""></a>
+              <a href="#"><img src="img/telegramm.svg" alt=""></a>
+              <a href="#"><img src="img/watsapp.svg" alt=""></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="collapse navbar-collapse">
+        <nav class="navbar-nav">
+          <div class="nav-link">
+            <a href="our-services.html">Услуги и цены</a>
+            <div class="submenu">
+              <div class="submenu-link">
+                <a href="asphalting.html">Асфальтирование</a>
+                <div class="subsubmenu">
+                  <a href="#">Какая-то ссылка</a>
+                  <a href="#">Какая-то ссылка</a>
+                  <a href="#">Какая-то ссылка</a>
+                  <a href="#">Какая-то ссылка</a>
+                  <a href="#">Какая-то ссылка</a>
+                </div>
+              </div>
+              <div class="submenu-link">
+                <a href="#">Ремонт дорог</a>
+              </div>
+              <div class="submenu-link">
+                <a href="#">Благоустройство и озеленение</a>
+              </div>
+              <div class="submenu-link">
+                <a href="#">Земляные работы</a>
+              </div>
+              <div class="submenu-link">
+                <a href="#">Уборка и вывоз снега</a>
+              </div>
+              <div class="submenu-link">
+                <a href="#">Подготовительные работы</a>
+              </div>
+            </div>
+          </div>
+          <div class="nav-link">
+            <a href="about.html">О компании</a>
+          </div>
+          <div class="nav-link">
+            <a href="index.html#steps">Этапы работы</a>
+          </div>
+          <div class="nav-link">
+            <a href="index.html#calc">Расчет стоимости</a>
+          </div>
+          <div class="nav-link">
+            <a href="#">Сертификаты и лицензии</a>
+          </div>
+        </nav>
+      </div>
+      <div class="contacts"> 
+        <a href="tel:84994082423">
+          <img src="img/phone-dark.svg" alt="">
+          +7 (499) 408-24-23
+        </a>
+        <div class="timetable">Будние дни с 9:00 до 19:00</div>
+      </div>
+    </div>
+  </header>
+
+
+<!--====================================================================
+================== PAGE-TITLE ==========================================
+=====================================================================-->
+  <section class="page-title">
+    <div class="container">
+      <h1>Сданные объекты</h1>
+    </div>
+  </section>            
+
+
+<!--====================================================================
+================== OBJECTS-SECTION =====================================
+=====================================================================-->
+  <section class="objects-section">
+    <div class="container">
+      <div class="row">
+        <a href="#" class="col-xxl-3 col-lg-4 col-md-6 object-card">
+          <img src="img/objects02.jpg" alt="">
+          <h4>ЗАО Реттиг Варме РУС</h4>
+          <p>Асфальтирование</p>
+        </a>
+        <a href="#" class="col-xxl-3 col-lg-4 col-md-6 object-card">
+          <img src="img/objects03.jpg" alt="">
+          <h4>Комбинат питания Конкорд</h4>
+          <p>Ямочный ремонт</p>
+        </a>
+        <a href="#" class="col-xxl-3 col-lg-4 col-md-6 object-card">
+          <img src="img/objects01.jpg" alt="">
+          <h4>Церковь</h4>
+          <p>Благоустройство</p>
+        </a>
+        <a href="#" class="col-xxl-3 col-lg-4 col-md-6 object-card">
+          <img src="img/objects02.jpg" alt="">
+          <h4>ЗАО Реттиг Варме РУС</h4>
+          <p>Асфальтирование</p>
+        </a>
+        <a href="#" class="col-xxl-3 col-lg-4 col-md-6 object-card">
+          <img src="img/objects04.jpg" alt="">
+          <h4>Парковка метро Фили</h4>
+          <p>Благоустройство</p>
+        </a>
+        <a href="#" class="col-xxl-3 col-lg-4 col-md-6 object-card">
+          <img src="img/objects02.jpg" alt="">
+          <h4>ЗАО Реттиг Варме РУС</h4>
+          <p>Асфальтирование</p>
+        </a>
+        <a href="#" class="col-xxl-3 col-lg-4 col-md-6 object-card">
+          <img src="img/objects03.jpg" alt="">
+          <h4>Церковь</h4>
+          <p>Ямочный ремонт</p>
+        </a>
+        <a href="#" class="col-xxl-3 col-lg-4 col-md-6 object-card">
+          <img src="img/objects02.jpg" alt="">
+          <h4>ЗАО Реттиг Варме РУС</h4>
+          <p>Асфальтирование</p>
+        </a>
+        <a href="#" class="col-xxl-3 col-lg-4 col-md-6 object-card">
+          <img src="img/objects02.jpg" alt="">
+          <h4>ЗАО Реттиг Варме РУС</h4>
+          <p>Асфальтирование</p>
+        </a>
+        <a href="#" class="col-xxl-3 col-lg-4 col-md-6 object-card">
+          <img src="img/objects03.jpg" alt="">
+          <h4>Комбинат питания Конкорд</h4>
+          <p>Ямочный ремонт</p>
+        </a>
+        <a href="#" class="col-xxl-3 col-lg-4 col-md-6 object-card">
+          <img src="img/objects01.jpg" alt="">
+          <h4>Церковь</h4>
+          <p>Благоустройство</p>
+        </a>
+        <a href="#" class="col-xxl-3 col-lg-4 col-md-6 object-card">
+          <img src="img/objects02.jpg" alt="">
+          <h4>ЗАО Реттиг Варме РУС</h4>
+          <p>Асфальтирование</p>
+        </a>
+        <a href="#" class="col-xxl-3 col-lg-4 col-md-6 object-card">
+          <img src="img/objects04.jpg" alt="">
+          <h4>Парковка метро Фили</h4>
+          <p>Благоустройство</p>
+        </a>
+        <a href="#" class="col-xxl-3 col-lg-4 col-md-6 object-card">
+          <img src="img/objects02.jpg" alt="">
+          <h4>ЗАО Реттиг Варме РУС</h4>
+          <p>Асфальтирование</p>
+        </a>
+        <a href="#" class="col-xxl-3 col-lg-4 col-md-6 object-card">
+          <img src="img/objects03.jpg" alt="">
+          <h4>Церковь</h4>
+          <p>Ямочный ремонт</p>
+        </a>
+        <a href="#" class="col-xxl-3 col-lg-4 col-md-6 object-card">
+          <img src="img/objects02.jpg" alt="">
+          <h4>ЗАО Реттиг Варме РУС</h4>
+          <p>Асфальтирование</p>
+        </a>
+      </div>
+      <div class="pagination">
+        <span class="pagination-item active">1</span>
+        <span class="pagination-item">2</span>
+        <span class="pagination-item">3</span>
+        <span class="pagination-item">4</span>
+      </div>
+    </div>
+  </section>
+
+
+<!--====================================================================
+================== FAQ-SECTION =========================================
+=====================================================================-->
+<section class="faq-section">
+  <div class="container objects-page-container">
+    <div class="row">
+      <div class="col-xxl-6 d-none d-xxl-block">
+        <div class="faq-section-img">
+          <img class="bg" src="img/faq-img.jpg" alt="">
+          <img class="icon" src="img/faq-icon.png" alt="">
+        </div>
+      </div>
+      <div class="col-xxl-6">
+        <h2>Частые вопросы</h2>
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h5 class="accordion-header" id="headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Вы сами получаете все необходимые разрешения?
+              </button>
+            </h5>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Асфальтирование помогает создавать прочные, надежные магистрали, трассы и дачные шоссе. Для каждого типа дороги найдется решение, которое подойдет по прочности, долговечности, стоимости. Укладка асфальта предполагает, что во время строительства проводятся работы, укрепляющие грунт. Могут использоваться специальные составы для стабилизации почвы. Дорога, заасфальтированная по ГОСТ, СНиП, — выгодное вложение, гарантия безопасного движения, сниженные затраты на ремонт. Поэтому задачу лучше доверять опытным мастерам с надежным оборудованием.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h5 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                Предоставляете ли вы гарантию на свою работу?
+              </button>
+            </h5>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Асфальтирование помогает создавать прочные, надежные магистрали, трассы и дачные шоссе. Для каждого типа дороги найдется решение, которое подойдет по прочности, долговечности, стоимости. Укладка асфальта предполагает, что во время строительства проводятся работы, укрепляющие грунт. Могут использоваться специальные составы для стабилизации почвы. Дорога, заасфальтированная по ГОСТ, СНиП, — выгодное вложение, гарантия безопасного движения, сниженные затраты на ремонт. Поэтому задачу лучше доверять опытным мастерам с надежным оборудованием.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h5 class="accordion-header" id="headingTree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTree" aria-expanded="true" aria-controls="collapseTree">
+                Сколько в среднем служит асфальтное покрытие?
+              </button>
+            </h5>
+            <div id="collapseTree" class="accordion-collapse collapse" aria-labelledby="headingTree" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Асфальтирование помогает создавать прочные, надежные магистрали, трассы и дачные шоссе. Для каждого типа дороги найдется решение, которое подойдет по прочности, долговечности, стоимости. Укладка асфальта предполагает, что во время строительства проводятся работы, укрепляющие грунт. Могут использоваться специальные составы для стабилизации почвы. Дорога, заасфальтированная по ГОСТ, СНиП, — выгодное вложение, гарантия безопасного движения, сниженные затраты на ремонт. Поэтому задачу лучше доверять опытным мастерам с надежным оборудованием.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h5 class="accordion-header" id="headingFour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                Какой асфальт выбрать?
+              </button>
+            </h5>
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Асфальтирование помогает создавать прочные, надежные магистрали, трассы и дачные шоссе. Для каждого типа дороги найдется решение, которое подойдет по прочности, долговечности, стоимости. Укладка асфальта предполагает, что во время строительства проводятся работы, укрепляющие грунт. Могут использоваться специальные составы для стабилизации почвы. Дорога, заасфальтированная по ГОСТ, СНиП, — выгодное вложение, гарантия безопасного движения, сниженные затраты на ремонт. Поэтому задачу лучше доверять опытным мастерам с надежным оборудованием.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!--====================================================================
+================== QESTIONS-SECTION ====================================
+=====================================================================-->
+<section class="qestions-section">
+<div class="container">
+  <div class="row">
+    <div class="col-xxl-6 qestions-title">
+      <h2>Остались вопросы?</h2>
+      <p class="mb-xxl-0">Мы с Вами свяжемся если поделитесь номерочком</p>
+    </div>
+    <div class="col-xxl-6">
+      <form action="" method="POST">
+        <div class="input">
+          <input type="tel" placeholder="Номер телефона">
+          <p>Нажимая кнопку Вы принимаете <a href="#">Соглашение об обработке персональных данных</a></p>
+        </div>
+        <div class="button">
+          <button type="button"><img src="img/arrow-right.svg" alt=""></button>
+        </div>
+      </form>
+    </div>
+    <img src="img/iphone.png" alt="">
+  </div>
+  
+</div>
+</section>
+
+
+<!--====================================================================
+================== FOOTER ==============================================
+=====================================================================-->
+  <footer class="footer">
+    <div class="container">
+      <a href="#" class="footer-logo">
+        <img src="img/logo-footer.png" alt="">
+      </a>
+      <div class="copyright">
+        <a href="#">Пользовательское соглашение </a> 
+        <p>RooM © 2022 Нью Роуд. Все права защищены.</p>
+      </div>
+      <div class="links-group1">
+        <a href="#">Услуги и цены</a>
+        <a href="#">О компании</a>
+        <a href="#">Почему мы</a>
+        <a href="#">Этапы работы</a>
+      </div>
+      <div class="links-group2">
+        <a href="#">Расчет стоимости</a>
+        <a href="#">Сертификаты и лицензии</a>
+        <a href="#">Сданные объекты</a>
+      </div>
+      <div class="footer-contacts">
+        <p>Режим работы:</p>
+        <span>Будние дни с 9:00 до 19:00</span>
+        <span>Выходные дни с 10:00 до 15:00</span>
+        <a href="tel:84994082423">
+          <img src="img/phone-icon.svg" alt="">
+          +7 (499) 408-24-23
+        </a>
+        <a href="malito:e-mail@newroud.ru">
+          <img src="img/email-icon.svg" alt="">
+          e-mail@newroud.ru
+        </a>
+      </div>
+      <div class="social">
+        <a href="#"><img src="img/vk.svg" alt=""></a>
+        <a href="#"><img src="img/telegramm.svg" alt=""></a>
+        <a href="#"><img src="img/watsapp.svg" alt=""></a>
+      </div>
+    </div>
+  </footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="js/menu.js"></script>
+</body>
+</html>

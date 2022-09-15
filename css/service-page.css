@@ -1,0 +1,366 @@
+/*===============================================================
+============= HOME-SECTION ======================================
+===============================================================*/
+.home-section .btn {
+  background-image: url(../img/Call.svg);
+  background-repeat: no-repeat;
+  background-position: right 7px center;
+  padding-left: 3rem;
+  padding-right: 4.1875rem;
+}
+
+/*===============================================================
+============= STAGES-SECTION ====================================
+===============================================================*/
+.stages-section {
+  background: #F5F7FC;
+  padding: 5rem 0;
+}
+
+.stages-section-img {
+  max-width: 40.25rem;
+  height: 40.25rem;
+  position: relative;
+}
+
+.stages-section-img .bg {
+  width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 20px 20px 20px 322px;
+}
+
+.stages-section-img .icon {
+  width: 175px;
+  position: absolute;
+  bottom: -12px;
+  left: 1px;
+}
+
+.stages-section ol{
+  counter-reset: myCounter;
+  padding: 0;
+  margin: 3.4rem 0 5rem;
+}
+
+.stages-section li{
+  position: relative;
+  list-style: none;
+  padding-left: 4.6rem;
+}
+
+.stages-section li p {
+  color: #444656;
+}
+
+.stages-section ol div li:last-child {
+  margin-bottom: 0;
+}
+
+.stages-section li:before {
+  counter-increment: myCounter;
+  content: counter(myCounter);
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: white;
+  background-image: url(../img/li-bg.svg);
+  display: inline-block;
+  font-size: 1.5rem;
+  text-align: center;
+  height: 52px;
+  width: 52px;
+  padding: 8px;
+}
+
+
+/*===============================================================
+============= PRICE-SECTION =====================================
+===============================================================*/
+.price-section {
+  background: #F5F7FC;
+  padding: 3.5rem 0 1px;
+}
+
+.price-section h4 {
+  text-align: center;
+}
+
+table {
+  width: 100%;
+}
+
+.table__container {
+  margin: 1.5rem 0 3.375rem;
+  border: 1px solid #DCDEE6;
+  border-radius: 20px;
+  background: #fff;
+  overflow: hidden;
+}
+
+.table__container tr:hover {
+  background: #FAFAFC;
+}
+
+.table__container td {
+  border-bottom: 1px solid #DCDEE6;
+  padding: 0.31rem 1.5rem;
+}
+
+.table__container td:not(:last-child) {
+  border-right: 1px solid #DCDEE6;
+}
+
+.table__container td:last-child {
+  width: 183px;
+}
+
+.table__container td:not(:first-child):nth-last-child(2) {
+  width: 135px;
+}
+
+.table__container tr:last-child td {
+  border-bottom-width: 0;
+}
+
+.table__container .free {
+  color: #FF3750;
+}
+
+.price-section .info {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 130%;
+  color: #8A929E;
+  text-align: center;
+}
+
+/*===============================================================
+============= RELATION-SECTION ==================================
+===============================================================*/
+.relation-section {
+  padding: 8.125rem 0;
+}
+
+.relation-section h4 {
+  text-align: center;
+  margin-top: 0.5rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+.relation-section img {
+  width: 100%
+}
+
+
+/*===============================================================
+============= RESULT-SECTION ====================================
+===============================================================*/
+.result-section {
+  padding-bottom: 9.3rem;
+}
+
+.result-card-wrapper {
+  display: grid;
+  grid-template: "control gost punctuality orders" 217px
+  "control technology technology orders" 221px
+  / 1fr 1fr 1fr 1fr;
+  grid-gap: 30px;
+}
+
+
+.result-card {
+  border-radius: 20px;
+  color: #fff;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.result-card .numbering {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 100%;
+  margin-bottom: 0;
+  padding: 0.2rem;
+}
+
+.result-card:nth-child(1) {
+  background: #266BF6;
+  background-image: url(../img/result01.png);
+  background-repeat: no-repeat;
+  background-position: bottom 1.5rem right -1.3rem;
+  grid-area: control;
+}
+
+.result-card:nth-child(2) {
+  background: #011257;
+  background-image: url(../img/result02.png);
+  background-repeat: no-repeat;
+  background-position: bottom -1.5rem right;
+  grid-area: gost;
+}
+
+.result-card:nth-child(3) {
+  background: #266BF6;
+  background-image: url(../img/result03.png);
+  background-repeat: no-repeat;
+  background-position: bottom 0 right 1.4rem;
+  grid-area: punctuality;
+}
+
+.result-card:nth-child(4) {
+  background: #001E90;
+  background-image: url(../img/result04.png);
+  background-repeat: no-repeat;
+  background-position: bottom 3rem right 0;
+  grid-area: orders;
+}
+
+.result-card:nth-child(5) {
+  background: #E2E9F7;
+  background-image: url(../img/result05.png);
+  background-repeat: no-repeat;
+  background-position: bottom 0 right 1rem;
+  grid-area: technology;
+  color: #011257;
+}
+
+
+/*==========================================================
+======= @ MEDIA ============================================
+===========================================================*/
+/*============================================
+======= > 1200px =============================
+=============================================*/
+@media (max-width: 1200px) {
+  .home-section {
+    background-image: linear-gradient(0deg, rgba(0, 22, 66, 0.92), rgba(0, 22, 66, 0.92)), url(../img/asphaltirovanye.jpg);
+    background-position: center top;
+    padding-top: 7.4rem;
+  }
+
+  .home-section h1+p {
+    color: #C4D3F0;
+  }
+
+  .home-section p {
+    font-size: 14px;
+  }
+
+  .result-section {
+    padding-bottom: 3.625rem;
+  }
+
+  .result-card:nth-child(1) {
+    background-position: bottom -1rem right 0;
+    background-size: 75%;
+  }
+
+  .result-card:nth-child(2) {
+    background-position: bottom -1rem right 0.2rem;
+    background-size: 55%;
+  }
+
+  .result-card:nth-child(3) {
+    background-position: bottom 0 right 1.5rem;
+    background-size: 48%;
+  }
+
+  .result-card:nth-child(4) {
+    background-position: bottom 1.2rem right 0;
+    background-size: 83%;
+  }
+
+  .result-card:nth-child(5) {
+    background-position: bottom 0 right -3.2rem;
+    background-size: 90%;
+  }
+
+  .result-card-wrapper {
+    grid-template: "control" 288px "gost" 180px "punctuality" 180px "orders" 338px "technology" 258px;
+  }
+
+  .result-card h4 {
+    font-size: 1rem;
+  }
+}
+
+/*============================================
+======= < 768px ==============================
+=============================================*/
+@media (max-width: 768px) {
+
+  .stages-section {
+    padding: 2.8125rem 0 0;
+  }
+
+  .table__container {
+    border: none;
+    box-shadow: 0px 1px 0px #DCDEE6;
+  }
+
+  .table__container tbody tr {
+    display: grid;
+    grid-template: 1fr 1fr/3fr 1fr;
+    padding: 23px 0;
+  }
+
+  .table__container tbody tr:not(:last-child) {
+    border-bottom: 1px solid #DCDEE6;;
+  }
+
+  .table__container tbody td:first-child {
+    grid-row: span 2;
+    font-weight: 700;
+  }
+
+  .table__container tbody td,
+  .table__container td:not(:last-child) {
+    border: none;
+  }
+
+  .table__container td:last-child,
+  .table__container td:not(:first-child):nth-last-child(2) {
+    width: auto;
+  }
+
+  .free-table tbody tr,
+  .free-table tbody tr td {
+    display: block;
+  }
+}
+
+
+
+
+
+/*============================================
+======= < 567px ==============================
+=============================================*/
+@media (max-width: 576px) {
+  h2 + p {
+    font-size: 14px;
+  }
+
+  .home-section .btn {
+    display: block;
+  }
+
+  .stages-section h4 + p {
+    font-size: 14px;
+    color: #444656;
+  }
+
+  .price-section .container {
+    padding: 0;
+  }
+
+  .price-section .container > h2,
+  .price-section .container > p {
+    padding: 0 1.5rem;
+  }
+}

@@ -1,0 +1,891 @@
+/*==========================================================
+======= WHY-WE-SECTION =====================================
+===========================================================*/
+.why-we-section {
+  padding: 3.5rem 0;
+}
+
+.why-we img {
+  margin-bottom: 1.25rem;
+}
+
+.why-we p {
+  color: #8A929E;
+}
+
+
+/*==========================================================
+======= SERVICES-SECTION ===================================
+===========================================================*/
+.services-section {
+  padding: 4rem 0;
+  background: #F5F7FC;
+}
+
+.services-section .price {
+  font-size: 0.88rem;
+  color: #fff;
+  border-radius: 0px 1rem 1rem;
+  padding: 6px 1rem;
+  background: linear-gradient(270deg, #003AAA -127.1%, #4F92E5 702.79%);
+}
+
+.price.free {
+  background: #FF3750;
+}
+
+.services-section .card {
+  position: relative;
+  justify-content: space-between;
+  height: 13rem;
+  overflow: hidden;
+  margin-bottom: 1.8rem;
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+
+.services-section .card:hover {
+  background: #3A6ACB;
+  color: #fff;
+}
+
+.services-section .card:hover .price {
+  color: #1C2229;
+  background: #F5F7FC;
+}
+
+.services-section .card:hover .price.free {
+  color: #FF3750;
+}
+
+.services-section .card h4 {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.services-section .card img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 47%;
+  min-height: 100%;
+  object-fit: cover;
+  object-position: center right;
+  border-radius: 7.5rem 0 0;
+}
+
+.info {
+  font-size: 0.88rem;
+  color: #8A929E;
+}
+
+.services-section .info {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+
+/*==========================================================
+======= ABOUT-SECTION ======================================
+===========================================================*/
+.about-section {
+  color: #fff;
+  background-image: url(../img/about-bg.svg), linear-gradient(316.99deg, #003AAA 35.77%, #4F92E5 99.9%);
+  background-position: right bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 5.55rem 0;
+}
+
+.about-section h2 + p {
+  color: #89A6E0;
+  margin-bottom: 3.4rem;
+}
+
+.about-section p {
+  max-width: 40.3rem;
+}
+
+.about-section h4 {
+  margin-top: 6.6rem;
+  margin-bottom: 2rem;
+}
+
+.progress-card-wrapper {
+  justify-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1rem;
+  overflow-x: auto;
+  max-width: 696px;
+}
+
+.progress-card-wrapper::-webkit-scrollbar {
+  width: 0;
+}
+
+.progress-card {
+  text-align: center;
+  width: 200px;
+  height: 200px;
+  font-weight: 400;
+  font-size: 0.88rem;
+  border: 6px solid #4E79D1;
+  border-radius: 50%;
+  padding: 1.7rem 1.2rem 0.5rem;
+  line-height: 120%;
+}
+
+.progress-card>span {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 110%;
+}
+
+.about-section .bg-img {
+  left: 0;
+  top: 9%;
+  width: 35%;
+  min-height: 79%;
+  border-radius: 0 25rem 25rem 0;
+}
+
+.about-section .bg-man {
+  position: absolute;
+  height: 85%;
+  bottom: 0;
+  left: 19%;
+}
+
+/*==========================================================
+======= STEPS-SECTION ======================================
+===========================================================*/
+.steps-section {
+  padding: 10rem 0 7.9rem;
+  
+  background-image: url(../img/steps-bg-img.png), url(../img/steps-bg.svg);
+  background-position: -13rem 0, -15rem 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.steps-section ol{
+  counter-reset: myCounter;
+  font-size: 1.5rem;
+  padding: 0;
+  margin: 3.4rem 0 5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-auto-flow: column;
+  grid-gap: 2.6rem 2rem;
+  align-items: center;
+}
+
+.steps-section li{
+  position: relative;
+  list-style: none;
+  padding-left: 4.6rem;
+}
+
+.steps-section ol div li:last-child {
+  margin-bottom: 0;
+}
+
+.steps-section li:before {
+  counter-increment: myCounter;
+  content: counter(myCounter);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  color: white;
+  background-image: url(../img/li-bg.svg);
+  display: inline-block;
+  text-align: center;
+  height: 52px;
+  width: 52px;
+  padding: 8px;
+}
+
+/*==========================================================
+======= CALCULATOR-SECTION =================================
+===========================================================*/
+.calculator-section,
+.price-section {
+  background: #F5F7FC;
+  padding: 6.7rem 0;
+}
+
+.calc {
+  padding-top: 5.5rem;
+}
+
+.calculator-section .calculator-service {
+  max-width: 154px;
+  text-align: center;
+  font-weight: 400;
+  margin: 0 auto;
+}
+
+.calculator-service-img {
+  width: 97.4%;
+  margin-bottom: 1.5rem;
+}
+
+.calculator-section-img {
+  max-width: 40.25rem;
+  height: 40.25rem;
+  position: relative;
+}
+
+.calculator-section-img .bg {
+  width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  object-position: right center;
+  border-radius: 20px 20px 20px 322px;
+}
+
+.calculator-section-img .icon {
+  width: 175px;
+  position: absolute;
+  bottom: -12px;
+  left: 1px;
+}
+
+.calculator {
+  font-weight: 700;
+  max-width: 40rem;
+  display: grid;
+  grid-template-areas: 
+    "services add-services"
+    "services square"
+    "button button";
+  grid-gap: 21px;
+}
+
+.calculator .card {
+  padding: 1.5rem 2.5rem;
+}
+
+.calculator h6 {
+  color: #8A929E;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.calculator label {
+  margin-bottom: 1.125rem;
+  position: relative;
+  padding-left: 40px;
+  cursor: pointer;
+}
+
+.calculator label:last-child {
+  margin-bottom: 0;
+}
+
+.calculator label span::before {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  display: block;
+  content: '';
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 1px solid #C4D3F0;
+}
+
+.calculator label span:hover {
+  color: #3A6ACB;
+}
+
+.calculator input {
+  display: none;
+}
+
+.calculator input:checked+span::before {
+  background-image: url(../img/check-input.svg);
+  border: none;
+}
+
+.input-services {
+  grid-area: services;
+}
+
+.input-add-services {
+  grid-area: add-services;
+}
+
+.input-square {
+  grid-area: square;
+}
+
+.calculator .btn {
+  grid-area: button;
+  margin-top: 11px;
+}
+
+.input-square input {
+  display: block;
+  padding: 0.7rem 0 0.7rem 1rem;
+  border: 1px solid #E2E9F7;
+  border-radius: 26px;
+  background-image: url(../img/m2.svg);
+  background-repeat: no-repeat;
+  background-position: top 1px right 1px;
+}
+
+.input-square input:focus {
+  border: 1px solid #3A6ACB;
+  outline: none;
+}
+
+input[type="number"] {
+	-moz-appearance: textfield;
+	-webkit-appearance: textfield;
+	appearance: textfield;
+}
+ 
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+	display: none;
+}
+
+.calculator-section .info {
+  margin-top: 1.5rem;
+}
+
+
+/*==========================================================
+======= PRICE-SECTION ======================================
+==========================================================*/
+.price-table {
+  margin-top: 1.2rem;
+  padding: 1rem 1.5rem 2rem;
+  background: #fff;
+  box-shadow: 0px 0px 20px #000b3112;
+  border-radius: 20px;
+}
+
+.price-table .btn {
+  color: #1C2229;
+  background: none;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.75rem 1.2rem;
+  margin-right: 0.5rem;
+}
+
+.price-table .btn:hover {
+  color: #3A6ACB;
+  box-shadow: none;
+}
+
+.price-table .btn:active,
+.price-table .btn.active {
+  color: #fff;
+  background: #3A6ACB;
+}
+
+.table__container {
+  margin-top: 1.5rem;
+  border: 1px solid #DCDEE6;
+  border-radius: 20px;
+  overflow-y: auto;
+}
+
+table {
+  width: 100%;
+}
+
+.price-table .tbody {
+  display: none;
+}
+
+.price-table .tbody.visible {
+  display: block;
+}
+
+.price-table tr:hover {
+  background: #FAFAFC;
+}
+
+.price-table td {
+  border-bottom: 1px solid #DCDEE6;
+  padding: 0.31rem 1.5rem;
+}
+
+.price-table td:not(:last-child) {
+  border-right: 1px solid #DCDEE6;
+}
+
+.price-table td:last-child {
+  width: 137px;
+}
+
+.price-table tr:last-child td {
+  border-bottom-width: 0;
+}
+
+.table__container .free {
+  color: #FF3750;
+}
+
+
+/*==========================================================
+======= ADVANTAGE-SECTION ==================================
+===========================================================*/
+.advantage-sectoin {
+  padding: 6rem 0;
+}
+
+.advantage-sectoin-card {
+  background: #F5F7FC;
+  border-radius: 20px;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 61px;
+  padding-bottom: 0.75rem;
+}
+
+.advantage-sectoin-card img {
+  width: 122px;
+  margin-top: -61px;
+  margin-bottom: 1.5rem;
+}
+
+
+/*==========================================================
+======= THANKS-SECTION =====================================
+===========================================================*/
+.thanks-section {
+  padding-top: 9.6rem;
+  padding-bottom: 8.5rem;
+}
+
+.thanks-grid-container {
+  display: grid;
+  grid-template: "text       carousel" 
+                  "button    carousel"
+                  / 48.5%        48.5%;
+  grid-gap: 3%;
+  margin-bottom: 3.5rem;
+}
+
+.thanks-text {
+ grid-area: text;
+}
+
+.carousel {
+  grid-area: carousel;
+}
+
+.thanks-section .thanks-btn {
+  grid-area: button;
+}
+
+.thanks-section .text {
+  max-width: 40rem;
+  margin-bottom: 5rem;
+}
+
+.companies {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  grid-gap: 1rem;
+  align-items: center;
+  text-align: center;
+  margin-top: 3.5rem;
+  flex-wrap: wrap;
+}
+
+.companies div {
+  padding: 0.5rem;
+}
+
+.companies div img {
+  max-width: 100%;
+}
+
+/*======= CAROUSEL =========================================*/
+.thanks-carousel-item {
+  background: #F5F7FC;
+  border-radius: 20px;
+  padding: 2.5rem 1.625rem;
+  height: 100%;
+}
+
+.owl-carousel .thanks-carousel-item img {
+  margin: 0 auto 2.375rem;
+  max-height: 75%;
+  max-width: 67.3%;
+  width: auto;
+}
+
+.thanks-carousel-item h4 {
+  font-weight: 500;
+}
+
+.thanks-carousel-item p {
+  color: #858585;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel .owl-nav button.owl-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: #3A6ACB;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.owl-carousel .owl-nav button.owl-prev.disabled,
+.owl-carousel .owl-nav button.owl-next.disabled {
+  display: none;
+}
+
+.owl-carousel .owl-nav button.owl-prev {
+  background-image: url(../img/arrow-left.svg);
+  left: -22px;
+}
+
+.owl-carousel .owl-nav button.owl-next {
+  background-image: url(../img/arrow-right.svg);
+  right: -22px;
+}
+
+.owl-carousel .owl-nav button.owl-prev span,
+.owl-carousel .owl-nav button.owl-next span {
+  display: none;
+}
+
+
+/*==========================================================
+======= OBJECTS-SECTION ====================================
+===========================================================*/
+.objects-section {
+  padding: 4rem 0;
+}
+
+.object-card {
+  padding: 1.5rem 1.75rem 1rem;
+  color: #1C2229;
+  transition: background 0.4s linear;
+  border-radius: 20px;
+}
+
+.object-card:hover {
+  color: #fff;
+  background: #3A6ACB;
+  box-shadow: 0px 12px 39px rgba(0, 11, 49, 0.14);
+}
+
+.objects-section .object-card:hover p {
+  color: #fff;
+}
+
+.objects-section .row img {
+  width: 100%;
+  height: 12rem;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+.objects-section .row h4 {
+  font-weight: 500;
+}
+
+.objects-section .row p {
+  color: #8A929E;
+}
+
+.objects-section .btn {
+  margin-top: 5rem;
+}
+
+
+/*==========================================================
+======= @ MEDIA ============================================
+===========================================================*/
+/*============================================
+======= > 1780px =============================
+=============================================*/
+@media (min-width: 1780px) {
+  .services-section .card h4 {
+    font-size: 1.5rem;
+  }
+  
+  .steps-section {
+    background-position: 4% 0, left;
+  }
+
+  .price-table .btn {
+    padding: 0.75rem 1.5rem;
+    margin-right: 1rem;
+  }
+}
+
+
+/*============================================
+======= < 1400px =============================
+=============================================*/
+@media (max-width: 1400px) {
+  .services-section .card h4 {
+    font-size: 1.5rem;
+  }
+
+  .service-card:last-child {
+    display: none;
+  }
+
+  .about-section {
+    padding-bottom: 0;
+    background: url(../img/about-min.svg), linear-gradient(15.23deg, #003AAA 66.32%, #4F92E5 108.28%);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .about-section .bg-img {
+    position: relative;
+    margin-top: 2rem;
+  }
+
+  .about-section .bg-img {
+    height: 514px;
+    max-width: 700px;
+    width: 90%;
+  }
+
+  .about-section .bg-man {
+    height: 446px;
+  }
+
+  .steps-section {
+    background-image: none;
+  }
+
+  .calculator {
+    max-width: none;
+  }
+
+  .objects-section .object-card:nth-last-child(-n+2) {
+    display: none;
+  }
+}
+
+
+/*============================================
+======= < 1200px =============================
+=============================================*/
+@media (max-width: 1200px) {
+
+  .home-section {
+    background-image: url(../img/home-bg-lg.jpg);
+  }
+
+  .steps-section ol {
+    font-size: 1.25rem;
+  }
+
+  .steps-section li {
+    padding-left: 3.8rem;
+  }
+
+  .steps-section li::before {
+    font-size: 1.5rem;
+  }
+
+  .advantage-sectoin-card {
+    margin-bottom: 20px;
+  }
+
+  .calculator-section .calculator-service {
+    margin-bottom: 2.7rem;
+  }
+}
+
+
+/*============================================
+======= < 992px ==============================
+=============================================*/
+@media (max-width: 992px) {
+  .services-section .card h4 {
+    font-size: 1rem;
+  }
+
+  .services-section .price {
+    font-size: 0.75rem;
+  }
+
+  .steps-section ol{
+    grid-template-columns: 1fr;
+    grid-auto-rows: 1fr;
+    grid-auto-flow: row;
+  }
+
+  .thanks-grid-container {
+    grid-template: "text" 
+                    "carousel"
+                    "button"
+                    /100%;
+    grid-gap: 0;
+  }
+
+  .thanks-section .thanks-btn {
+    display: block;
+    margin: 3.5rem auto 0;
+  }
+
+  .companies {
+    grid-template-columns: 2fr 1fr 1fr 2fr;
+  }
+
+  .companies div:nth-child(-n+2),
+  .companies div:nth-last-child(2) {
+    grid-column-start: span 2;
+  }
+}
+
+
+/*============================================
+======= < 768px ==============================
+=============================================*/
+@media (max-width: 768px) {
+  
+  .services-section .card h4 {
+    padding-top: 95px;
+  }
+  
+  .services-section .card {
+    height: 220px;
+    padding: 0.75rem;
+  }
+  
+  .services-section .card img {
+    left: 0;
+    max-height: 102px;
+    min-height: auto;
+    border-radius: 0;
+    min-width: 100%;
+  }
+
+  .calculator {
+    grid-template-areas: 
+      "services"
+      "add-services"
+      "square"
+      "button";
+    grid-gap: 1rem;
+  }
+
+  .calculator-section .info {
+    margin-top: 2.3rem;
+  }
+
+  .objects-section .object-card:nth-last-child(-n+4) {
+    display: none;
+  }
+
+  .companies {
+    grid-gap: 0.5rem;
+  }
+}
+
+
+/*============================================
+======= < 567px ==============================
+=============================================*/
+@media (max-width: 576px) {
+  .services-section .card h4 {
+    font-size: 0.95rem;
+  }
+  
+  .progress-card {
+    width: 146px;
+    height: 146px;
+    font-size: 12px;
+    border-width: 4.4px;
+    padding: 1rem 0.5rem 0.5rem;
+  }
+  
+  .progress-card>span {
+    font-size: 2.9rem;
+  }
+
+  .progress-card p span {
+    display: none;
+  }
+
+  .steps-section {
+    padding: 4.75rem 0;
+  }
+
+  .steps-section ol li{
+    font-size: 1rem;
+  }
+
+  .steps-section ol li::before {
+    font-size: 1.5rem;
+  }
+
+  .calculator-section {
+    padding: 3.3rem 0 4.75rem;
+  }
+
+  .calculator-service p {
+    font-size: 14px;
+  }
+
+  .calculator-service-img {
+    width: 74%;
+  }
+
+  .advantage-sectoin {
+    padding: 3.75rem 0 4.6rem;
+  }
+
+  .advantage-sectoin-card {
+    min-height: 104px;
+    padding: 0 1rem 1rem;
+    font-size: 1rem;
+    margin-top: 2rem;
+  }
+
+  .advantage-sectoin-card img {
+    width: 64px;
+    margin-top: -32px;
+    margin-bottom: 0.25rem;
+  }
+
+  .thanks-section {
+    padding: 4.4rem 0;
+  }
+
+  .thanks-section .text {
+    display: none;
+  }
+
+  .carousel {
+    height: auto;
+  }
+
+  .thanks-carousel-item {
+    padding: 26.5px 17.2px;
+  }
+
+  .thanks-carousel-item p {
+    font-size: 10.6px;
+  }
+}

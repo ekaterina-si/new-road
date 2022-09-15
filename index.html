@@ -1,0 +1,1039 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Нью Роуд</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="OwlCarousel2/dist/assets/owl.carousel.css">
+  <link rel="stylesheet" href="css/basic.css">
+  <link rel="stylesheet" href="css/home-page.css">
+</head>
+<body>
+
+<!--====================================================================
+================== HEADER ==============================================
+=====================================================================-->
+  <header class="navbar navbar-expand-xxl">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">
+        <img src="img/logo.png" alt="logo">
+      </a>
+      <button class="navbar-toggler" type="button">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="menu">
+        <div class="container">
+          <nav>
+            <div class="menu-link">
+              <a href="our-services.html">Услуги и цены</a>
+              <button class="dropdown-btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#services" aria-expanded="false" aria-controls="services"></button>
+            </div>
+            <div class="collapse drop" id="services">
+              <div class="menu-link">
+                <a href="asphalting.html">Асфальтирование</a>
+                <button class="dropdown-btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#asphalting-links" aria-expanded="false" aria-controls="asphalting-links"></button>
+              </div>
+              <div class="collapse drop" id="asphalting-links">
+                <a class="menu-link" href="#">Какая-то ссылка</a>
+                <a class="menu-link" href="#">Какая-то ссылка</a>
+                <a class="menu-link" href="#">Какая-то ссылка</a>
+                <a class="menu-link" href="#">Какая-то ссылка</a>
+                <a class="menu-link" href="#">Какая-то ссылка</a>
+              </div>
+              <div class="menu-link">
+                <a href="#">Ремонт дорог</a>
+              </div>
+              <div class="menu-link">
+                <a href="#">Благоустройство и озеленение</a>
+              </div>
+              <div class="menu-link">
+                <a href="#">Земляные работы</a>
+              </div>
+              <div class="menu-link">
+                <a href="#">Уборка и вывоз снега</a>
+              </div>
+              <div class="menu-link">
+                <a href="#">Подготовительные работы</a>
+              </div>
+            </div>
+            <div class="menu-link">
+              <a href="about.html">О компании</a>
+            </div>
+            <div class="menu-link">
+              <a href="#steps">Этапы работы</a>
+            </div>
+            <div class="menu-link">
+              <a href="#calc">Расчет стоимости</a>
+            </div>
+            <div class="menu-link">
+              <a href="#">Сертификаты и лицензии</a>
+            </div>
+            <div class="menu-link">
+              <a href="objects.html">Сданные объекты</a>
+            </div>
+          </nav>
+          <div class="menu-contacts">
+            <p>Режим работы:</p>
+            <span>Будние дни с 9:00 до 19:00</span>
+            <span>Выходные дни с 10:00 до 15:00</span>
+            <a class="phone" href="tel:84994082423">
+              <img src="img/phone-black-icon.svg" alt="">
+              +7 (499) 408-24-23
+            </a>
+            <a href="malito:e-mail@newroud.ru">
+              <img src="img/email-black-icon.svg" alt="">
+              e-mail@newroud.ru
+            </a>
+            <div class="social">
+              <a href="#"><img src="img/vk.svg" alt=""></a>
+              <a href="#"><img src="img/telegramm.svg" alt=""></a>
+              <a href="#"><img src="img/watsapp.svg" alt=""></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="collapse navbar-collapse">
+        <nav class="navbar-nav">
+          <div class="nav-link">
+            <a href="our-services.html">Услуги и цены</a>
+            <div class="submenu">
+              <div class="submenu-link">
+                <a href="asphalting.html">Асфальтирование</a>
+                <div class="subsubmenu">
+                  <a href="#">Какая-то ссылка</a>
+                  <a href="#">Какая-то ссылка</a>
+                  <a href="#">Какая-то ссылка</a>
+                  <a href="#">Какая-то ссылка</a>
+                  <a href="#">Какая-то ссылка</a>
+                </div>
+              </div>
+              <div class="submenu-link">
+                <a href="#">Ремонт дорог</a>
+              </div>
+              <div class="submenu-link">
+                <a href="#">Благоустройство и озеленение</a>
+              </div>
+              <div class="submenu-link">
+                <a href="#">Земляные работы</a>
+              </div>
+              <div class="submenu-link">
+                <a href="#">Уборка и вывоз снега</a>
+              </div>
+              <div class="submenu-link">
+                <a href="#">Подготовительные работы</a>
+              </div>
+            </div>
+          </div>
+          <div class="nav-link">
+            <a href="about.html">О компании</a>
+          </div>
+          <div class="nav-link">
+            <a href="index.html#steps">Этапы работы</a>
+          </div>
+          <div class="nav-link">
+            <a href="index.html#calc">Расчет стоимости</a>
+          </div>
+          <div class="nav-link">
+            <a href="#">Сертификаты и лицензии</a>
+          </div>
+        </nav>
+      </div>
+      <div class="contacts"> 
+        <a href="tel:84994082423">
+          <img src="img/phone-dark.svg" alt="">
+          +7 (499) 408-24-23
+        </a>
+        <div class="timetable">Будние дни с 9:00 до 19:00</div>
+      </div>
+    </div>
+  </header>
+
+<!--====================================================================
+================== HOME-SECTION ========================================
+=====================================================================-->
+  <section class="home-section">
+    <img class="bg-img" src="img/home-img.jpg" alt="">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-xl-5 home-title">
+          <h1>Кладем асфальт<br>в Москве и области</h1>
+          <p>Подтекст. Какой-то текст.</p>
+          <a class="btn" href="#calc">Расчет стоимости</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+<!--====================================================================
+================== WHY-WE-SECTION ======================================
+=====================================================================-->
+
+  <section class="why-we-section">
+    <div class="container">
+      <div class="row why-we">
+  
+        <div class="col-xl-3 col-6">
+          <img src="img/sobstveniy-park-tehniki.svg" alt="">
+          <h4>Собственный парк техники</h4>
+          <p>Позволяют нам контролировать <br> качество смеси на всех этапах работы.</p>
+        </div>
+  
+        <div class="col-xl-3 col-6">
+          <img src="img/professionalnaya-komanda.svg" alt="">
+          <h4>Профессиональная команда</h4>
+          <p>14-летний опыт в сфере дорожного <br> строительства.</p>
+        </div>
+  
+        <div class="col-xl-3 col-6">
+          <img src="img/sobstveniy-park-tehniki.svg" alt="">
+          <h4>Качественные материалы</h4>
+          <p>Мы используем только проверенных <br> поставщиков.</p>
+        </div>
+  
+        <div class="col-xl-3 col-6">
+          <img src="img/sobstveniy-park-tehniki.svg" alt="">
+          <h4>Даем гарантии</h4>
+          <p>Отвечаем за свою работу, потому даем <br> гарантии по срокам, смете, толщине покрытия.</p>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+
+<!--====================================================================
+================== SERVICES-SECTION ====================================
+=====================================================================-->
+  <section class="services-section">
+    <div class="container">
+      <h2>Услуги и цены</h2>
+      <p>В цену включены все расходы в том числе НДС и расходы на материалы.</p>
+      <div class="row">
+
+        <div class="service-card col-xxl-4 col-6">
+          <a href="#" class="card">
+            <h4>Выезд специалиста <br> на объект</h4>
+            <div>
+              <span class="price free">БЕСПЛАТНО</span>
+            </div>
+            <img src="img/vyezd-specialista.jpg" alt="">
+          </a>
+        </div>
+
+        <div class="service-card col-xxl-4 col-6">
+          <a href="#" class="card">
+            <h4>Консультация <br> на объекте</h4>
+            <div>
+              <span class="price free">БЕСПЛАТНО</span>
+            </div>
+            <img src="img/consultacia.jpg" alt="">
+          </a>
+        </div>
+
+        <div class="service-card col-xxl-4 col-6">
+          <a href="#" class="card">
+            <h4>Составление <br> предварительной <br> сметы</h4>
+            <div>
+              <span class="price free">БЕСПЛАТНО</span>
+            </div>
+            <img src="img/sostavlenye-smety.jpg" alt="">
+          </a>
+        </div>
+
+        <div class="service-card col-xxl-4 col-6">
+          <a href="#" class="card">
+            <h4>Асфальтирование <br> дорог</h4>
+            <div>
+              <span class="price">от 170 ₽ за м2</span>
+            </div>
+            <img src="img/asphaltirovanye-min.jpg" alt="">
+          </a>
+        </div>
+
+        <div class="service-card col-xxl-4 col-6">
+          <a href="#" class="card">
+            <h4>Ремонт дорог</h4>
+            <div>
+              <span class="price">от 20 ₽ за м2</span>
+            </div>
+            <img src="img/remont-dorog-min.jpg" alt="">
+          </a>
+        </div>
+
+        <div class="service-card col-xxl-4 col-6">
+          <a href="#" class="card">
+            <h4>Благоустройство <br> и озеленение</h4>
+            <div>
+              <span class="price">от 70 ₽ за м2</span>
+            </div>
+            <img src="img/blagoustroistvo-min.jpg" alt="">
+          </a>
+        </div>
+
+        <div class="service-card col-xxl-4 col-6">
+          <a href="#" class="card">
+            <h4>Земляные работы</h4>
+            <div>
+              <span class="price">от 170 ₽ за м2</span>
+            </div>
+            <img src="img/zemlyanye-raboty-min.jpg" alt="">
+          </a>
+        </div>
+
+        <div class="service-card col-xxl-4 col-6">
+          <a href="#" class="card">
+            <h4>Уборка <br> и вывоз снега</h4>
+            <div>
+              <span class="price">от 20 ₽ за м2</span>
+            </div>
+            <img src="img/uborka-snega-min.jpg" alt="">
+          </a>
+        </div>
+
+        <div class="service-card col-xxl-4 col-6">
+          <a href="#" class="card">
+            <h4>Подготовительные <br> работы</h4>
+            <div>
+              <span class="price">от 70 ₽ за м2</span>
+            </div>
+            <img src="img/podgotovitelnye-raboty-min.jpg" alt="">
+          </a>
+        </div>
+
+      </div>
+      <p class="info">Цены могут изменится в зависимости от объема работ. Услуги посредников оплачиваются по договоренности.</p>
+      <div class="btn-container">
+        <a class="btn btn-outline" href="#">Подробнее</a>
+      </div>
+    </div>
+  </section>
+
+<!--====================================================================
+================== ABOUT-SECTION =======================================
+=====================================================================-->
+<section class="about-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-xxl-6 offset-xxl-6">
+        <h2>О компании</h2>
+        <p>— лидер рынка дорожного строительства. Это говорят наши клиенты, а мы делаем всё, чтобы так и было.</p>
+        <p>Работая с нами, Вы получаете явные преимущества в качестве, в цене и скорости сделанной работы. Данные преимущества объясняются тем, что у нас свое современное оборудование, накопленный опыт за 12 лет и бригада опытных сотрудников.</p>
+        <p>Наши работы соответствую всем ГОСТам. Узнать цены на асфальтирование дорог и дворовых территорий в Москве Вы можете на сайте или позвонив нашим менеджерам.</p>
+        <h4>Наши достижения за 12 лет</h4>
+        <div class="progress-card-wrapper">
+          <div class="progress-card">
+            <span>42%</span>
+            <p>Рост числа асфальтированных площадей</p>
+          </div>
+          <div class="progress-card">
+            <span>34%</span>
+            <p>Рост выручки предприятия <span>в среднем</span> за последние <br> 5 лет</p>
+          </div>
+          <div class="progress-card">
+            <span>41%</span>
+            <p>Клиентов приходят по рекомендациям</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <img class="bg-img" src="img/about-img02.jpg" alt="">
+  <img class="bg-man" src="img/about-img01.png" alt="">
+</section>
+
+<!--====================================================================
+================== STEPS-SECTION =======================================
+=====================================================================-->
+<section id="steps" class="steps-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-xxl-8 offset-xxl-4">
+        <h2>Этапы работы</h2>
+        <p>Устройство дорожного покрытия не терпит дилетантства.</p>
+        <ol class="steps-list">
+          <li>Выезд геодезиста  для осуществления геодезической съемки</li>
+          <li>Расчет планируемой нагрузки будущего а/б покрытия</li>
+          <li>Разработка проектно-сметной документации</li>
+          <li>Подготовка площадки перед началом производства работ</li>
+          <li>Выемка грунта согласно проектных отметок</li>
+          <li>Уплотнение основания дорожного корыта</li>
+          <li>Установка бордюрного камня</li>
+          <li>Устройство дорожного «пирога» (песок, щебень, бетон)</li>
+          <li>Обработка основания битумной эмульсией</li>
+          <li>Устройство асфальтобетонного покрытия</li>
+        </ol>
+        <div class="btn-container">
+          <a class="btn" href="#calc">Расчет стоимости</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--====================================================================
+================== CALCULATOR-SECTION ==================================
+=====================================================================-->
+<section class="calculator-section">
+  <div class="container">
+    <div class="services row">
+
+      <div class="col-xl-2 col-md-4 col-6">
+        <div class="calculator-service">
+          <img class="calculator-service-img" src="img/ukladka-asphalta.svg" alt="">
+          <p>Укладка асфальта</p>
+        </div>
+      </div>
+
+      <div class="col-xl-2 col-md-4 col-6">
+        <div class="calculator-service">
+          <img class="calculator-service-img" src="img/yamochnyi-remont.svg" alt="">
+          <p>Ямочный ремонт</p>
+        </div>
+      </div>
+
+      <div class="col-xl-2 col-md-4 col-6">
+        <div class="calculator-service">
+          <img class="calculator-service-img" src="img/ukladka-asphaltovoy-kroshki.svg" alt="">
+          <p>Укладка асфальтовой крошки</p>
+        </div>
+      </div>
+
+      <div class="col-xl-2 col-md-4 col-6">
+        <div class="calculator-service">
+          <img class="calculator-service-img" src="img/blagoustroistvo.svg" alt="">
+          <p>Благоустройство</p>
+        </div>
+      </div>
+
+      <div class="col-xl-2 col-md-4 col-6">
+        <div class="calculator-service">
+          <img class="calculator-service-img" src="img/ustanovka-bordurov.svg" alt="">
+          <p>Установка бордюров</p>
+        </div>
+      </div>
+
+      <div class="col-xl-2 col-md-4 col-6">
+        <div class="calculator-service">
+          <img class="calculator-service-img" src="img/ukladka-plitki.svg" alt="">
+          <p>Укладка тротуарной плитки</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="calc" class="calc row">
+      <div class="col-xxl-6 d-none d-xxl-block">
+        <div class="calculator-section-img">
+          <img class="bg" src="img/calc-img.jpg" alt="">
+          <img class="icon" src="img/calc-icon.png" alt="">
+        </div>
+      </div>
+      <div class="col-xxl-6">
+        <h2>Калькулятор стоимости</h2>
+        <p>Воспользуйтесь калькулятором, чтобы узнать приблизительную стоимость работ.</p>
+        <form class="calculator">
+          <div class="card input-services">
+            <h6>Услуги по асфальтированию</h6>
+            
+            <label>
+              <input type="radio" value="prostoe-asphaltirovanye" name="services">
+              <span>Простое асфальтирование</span>
+            </label>
+
+            <label>
+              <input type="radio" value="s-podsypkoy" name="services">
+              <span>С подсыпкой основания</span>
+            </label>
+            
+            <label>
+              <input type="radio" value="standartnyi-pirog" name="services">
+              <span>Стандартный пирог</span>
+            </label>
+
+            <label>
+              <input type="radio" value="budgetnyi-variant" name="services">
+              <span>Бюджетный вариант</span>
+            </label>
+
+            <label>
+              <input type="radio" value="po-gostu" name="services">
+              <span>По ГОСТу</span>
+            </label>
+            
+            <label>
+              <input type="radio" value="euro-standart" name="services">
+              <span>ЕВРО стандарт</span>
+            </label>
+          </div>
+
+          <div class="card input-add-services">
+            <h6>Дополнительные услуги</h6>
+
+            <label>
+              <input type="checkbox" value="yamochnyi-remont">
+              <span>Ямочный ремонт</span>
+            </label>
+            <label>
+              <input type="checkbox" value="asphaltovaya-kroshka">
+              <span>Асфальтовая крошка</span>
+            </label>
+          </div>
+
+          <div class="card input-square">
+            <h6>Площадь объекта</h6>
+            <input placeholder="Введите значение" type="number">
+          </div>
+          <button class="btn">Расчет стоимости</button>
+        </form>
+      </div>
+    </div>
+    <p class="info">Асфальтовая крошка широко используется при укладке дорожных покрытий. Главным достоинством материала является: --Демократичная цена, которая выгодно выделяет асфальтовую крошку на фоне щебня; Долгий срок службы при использовании ее в подходящих для этого условиях: второстепенных дорог и дорожек малой протяженности и спортивных комплексов; Высокая устойчивость к неблагоприятным погодным условиям.</p>
+  </div>
+</section>
+
+
+<!--====================================================================
+================== PRICE-SECTION =======================================
+=====================================================================-->
+<section class="price-section d-none d-lg-block">
+  <div class="container">
+    <h2>Прайс лист на услуги</h2>
+    <p>Для более подробного просчета свяжитесь со специалистом или оставьтя свои контактные <br> данные, мы вам наберем сами.</p>
+    <div class="price-table">
+      <button class="btn active" data-value="asphalting-table">Асфальтирование дорог</button>
+      <button class="btn" data-value="preparatory-table">Подготовительные работы</button>
+      <button class="btn" data-value="improvement-table">Благоустройство и озеленение</button>
+      <button class="btn" data-value="dismantling-table">Демонтажные, земельные работы</button>
+      <div>
+
+        <div class="visible tbody" id="asphalting-table">
+          <div class="table__container">
+            <table>
+              <tbody>
+                <tr>
+                  <td>Покрытие из песчаного асфальта толщиной 4-5см</td>
+                  <td>м2</td>
+                  <td>450 ₽</td>
+                </tr>
+                <tr>
+                  <td>Покрытие из мелкозернистого асфальта толщиной 4-5см</td>
+                  <td>м2</td>
+                  <td>450 ₽</td>
+                </tr>
+                <tr>
+                  <td>Покрытие из крупнозернистого асфальта толщиной 4-5см</td>
+                  <td>м2</td>
+                  <td>450 ₽</td>
+                </tr>
+                <tr>
+                  <td>Покрытие из ШМА толщиной 5-6 см</td>
+                  <td>м2</td>
+                  <td>450 ₽</td>
+                </tr>
+                <tr>
+                  <td>Ямочный ремонт асфальта (карты до 100м2)</td>
+                  <td>м2</td>
+                  <td>450 ₽</td>
+                </tr>
+                <tr>
+                  <td>Устройство выравнивающего слоя (черновик)</td>
+                  <td>м2</td>
+                  <td>450 ₽</td>
+                </tr>
+                <tr>
+                  <td>Устройство фрезерованного асфальтобетона (крошка) толщиной 10см</td>
+                  <td>м2</td>
+                  <td>450 ₽</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="table__container">
+            <table>
+              <tbody>
+                <tr>
+                  <td>Покрытие из песчаного асфальта толщиной 4-5см</td>
+                  <td class="free">Бесплатно</td>
+                </tr>
+                <tr>
+                  <td>Покрытие из крупнозернистого асфальта толщиной 4-5см</td>
+                  <td class="free">Бесплатно</td>
+                </tr>
+                <tr>
+                  <td>Устройство фрезерованного асфальтобетона (крошка) толщиной 10см</td>
+                  <td class="free">Бесплатно</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+  
+        <div class="tbody" id="preparatory-table">
+          <div class="table__container">
+            <table>
+              <tbody>
+                <tr>
+                  <td>Покрытие из мелкозернистого асфальта толщиной 4-5см</td>
+                  <td>м2</td>
+                  <td>450 ₽</td>
+                </tr>
+                <tr>
+                  <td>Покрытие из песчаного асфальта толщиной 4-5см</td>
+                  <td>м2</td>
+                  <td>450 ₽</td>
+                </tr>
+                <tr>
+                  <td>Покрытие из крупнозернистого асфальта толщиной 4-5см</td>
+                  <td>м2</td>
+                  <td>450 ₽</td>
+                </tr>
+                <tr>
+                  <td>Покрытие из ШМА толщиной 5-6 см</td>
+                  <td>м2</td>
+                  <td>450 ₽</td>
+                </tr>
+                <tr>
+                  <td>Ямочный ремонт асфальта (карты до 100м2)</td>
+                  <td>м2</td>
+                  <td>450 ₽</td>
+                </tr>
+                <tr>
+                  <td>Устройство выравнивающего слоя (черновик)</td>
+                  <td>м2</td>
+                  <td>450 ₽</td>
+                </tr>
+                <tr>
+                  <td>Устройство фрезерованного асфальтобетона (крошка) толщиной 10см</td>
+                  <td>м2</td>
+                  <td>450 ₽</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="table__container">
+            <table>
+              <tbody>
+                <tr>
+                  <td>Покрытие из песчаного асфальта толщиной 4-5см</td>
+                  <td class="free">Бесплатно</td>
+                </tr>
+                <tr>
+                  <td>Покрытие из крупнозернистого асфальта толщиной 4-5см</td>
+                  <td class="free">Бесплатно</td>
+                </tr>
+                <tr>
+                  <td>Устройство фрезерованного асфальтобетона (крошка) толщиной 10см</td>
+                  <td class="free">Бесплатно</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+  
+        <div class="tbody" id="improvement-table">
+          <div class="table__container">
+            <table>
+              <tbody>
+                <tr>
+                  <td>Покрытие из песчаного асфальта толщиной 4-5см</td>
+                  <td>м2</td>
+                  <td>450 ₽</td>
+                </tr>
+                <tr>
+                  <td>Покрытие из крупнозернистого асфальта толщиной 4-5см</td>
+                  <td>м2</td>
+                  <td>450 ₽</td>
+                </tr>
+                <tr>
+                  <td>Покрытие из мелкозернистого асфальта толщиной 4-5см</td>
+                  <td>м2</td>
+                  <td>450 ₽</td>
+                </tr>
+                <tr>
+                  <td>Покрытие из ШМА толщиной 5-6 см</td>
+                  <td>м2</td>
+                  <td>450 ₽</td>
+                </tr>
+                <tr>
+                  <td>Ямочный ремонт асфальта (карты до 100м2)</td>
+                  <td>м2</td>
+                  <td>450 ₽</td>
+                </tr>
+                <tr>
+                  <td>Устройство выравнивающего слоя (черновик)</td>
+                  <td>м2</td>
+                  <td>450 ₽</td>
+                </tr>
+                <tr>
+                  <td>Устройство фрезерованного асфальтобетона (крошка) толщиной 10см</td>
+                  <td>м2</td>
+                  <td>450 ₽</td>
+                </tr>
+                <tr>
+                  <td>Устройство фрезерованного асфальтобетона (крошка) толщиной 10см</td>
+                  <td>м2</td>
+                  <td>450 ₽</td>
+                </tr>
+                <tr>
+                  <td>Устройство фрезерованного асфальтобетона (крошка) толщиной 10см</td>
+                  <td>м2</td>
+                  <td>450 ₽</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="table__container">
+            <table>
+              <tbody>
+                <tr>
+                  <td>Покрытие из песчаного асфальта толщиной 4-5см</td>
+                  <td class="free">Бесплатно</td>
+                </tr>
+                <tr>
+                  <td>Покрытие из крупнозернистого асфальта толщиной 4-5см</td>
+                  <td class="free">Бесплатно</td>
+                </tr>
+                <tr>
+                  <td>Устройство фрезерованного асфальтобетона (крошка) толщиной 10см</td>
+                  <td class="free">Бесплатно</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+  
+        <div class="tbody" id="dismantling-table">
+          <div class="table__container">
+            <table>
+              <tbody>
+                <tr>
+                  <td>Покрытие из песчаного асфальта толщиной 4-5см</td>
+                  <td>м2</td>
+                  <td>450 ₽</td>
+                </tr>
+                <tr>
+                  <td>Покрытие из мелкозернистого асфальта толщиной 4-5см</td>
+                  <td>м2</td>
+                  <td>450 ₽</td>
+                </tr>
+                <tr>
+                  <td>Покрытие из ШМА толщиной 5-6 см</td>
+                  <td>м2</td>
+                  <td>450 ₽</td>
+                </tr>
+                <tr>
+                  <td>Покрытие из крупнозернистого асфальта толщиной 4-5см</td>
+                  <td>м2</td>
+                  <td>450 ₽</td>
+                </tr>
+                <tr>
+                  <td>Ямочный ремонт асфальта (карты до 100м2)</td>
+                  <td>м2</td>
+                  <td>450 ₽</td>
+                </tr>
+                <tr>
+                  <td>Устройство выравнивающего слоя (черновик)</td>
+                  <td>м2</td>
+                  <td>450 ₽</td>
+                </tr>
+                <tr>
+                  <td>Устройство фрезерованного асфальтобетона (крошка) толщиной 10см</td>
+                  <td>м2</td>
+                  <td>450 ₽</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="table__container">
+            <table>
+              <tbody>
+                <tr>
+                  <td>Покрытие из песчаного асфальта толщиной 4-5см</td>
+                  <td class="free">Бесплатно</td>
+                </tr>
+                <tr>
+                  <td>Покрытие из крупнозернистого асфальта толщиной 4-5см</td>
+                  <td class="free">Бесплатно</td>
+                </tr>
+                <tr>
+                  <td>Устройство фрезерованного асфальтобетона (крошка) толщиной 10см</td>
+                  <td class="free">Бесплатно</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--====================================================================
+================== ADVANTAGE-SECTION ===================================
+=====================================================================-->
+<section class="advantage-sectoin">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-xl-3 col-6">
+        <div class="advantage-sectoin-card">
+          <img src="img/komanda.png" alt="">
+          <p>157 человек <br> в команде</p>
+        </div>
+      </div>
+
+      <div class="col-xl-3 col-6">
+        <div class="advantage-sectoin-card">
+          <img src="img/tehnika.png" alt="">
+          <p>34 единицы <br> техники</p>
+        </div>
+      </div>
+
+      <div class="col-xl-3 col-6">
+        <div class="advantage-sectoin-card">
+          <img src="img/proecty.png" alt="">
+          <p>720 реализованных <br> объектов</p>
+        </div>
+      </div>
+
+      <div class="col-xl-3 col-6">
+        <div class="advantage-sectoin-card">
+          <img src="img/garantiya.png" alt="">
+          <p>100% гарантия <br> толщины покрытия</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!--====================================================================
+================== QESTIONS-SECTION ====================================
+=====================================================================-->
+  <section class="qestions-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-xxl-6 qestions-title">
+          <h2>Остались вопросы?</h2>
+          <p class="mb-xxl-0">Мы с Вами свяжемся если поделитесь номерочком</p>
+        </div>
+        <div class="col-xxl-6">
+          <form action="" method="POST">
+            <div class="input">
+              <input type="tel" placeholder="Номер телефона">
+              <p>Нажимая кнопку Вы принимаете <a href="#">Соглашение об обработке персональных данных</a></p>
+            </div>
+            <div class="button">
+              <button type="button"><img src="img/arrow-right.svg" alt=""></button>
+            </div>
+          </form>
+        </div>
+        <img src="img/iphone.png" alt="">
+      </div>  
+    </div>
+  </section>
+
+
+<!--====================================================================
+================== THANKS-SECTION ======================================
+=====================================================================-->
+  <section class="thanks-section">
+    <div class="container">
+
+      <div class="thanks-grid-container">
+        <div class="thanks-text">
+          <h2>Благодарственные письма</h2>
+          <p>— лидер рынка дорожного строительства. Это говорят наши клиенты, а мы делаем всё, чтобы так и было.</p>
+          <p class="text">Компания ООО «Нью Роуд» имеет все разрешения на выполнение работ в сфере асфальтирования дорог. В том числе: СРО до 60 млн. рублей по одному договору, сертификат соответствия международного стандарта ISO 9001-2015 (Системы менеджмента качества), сертификат о включении в «РЕЕСТР ДОБРОСОВЕСТНЫХ ИСПОЛНИТЕЛЕЙ». Все разрешения и сертификаты можно проверить в публичных реестрах.</p>
+        </div>
+  
+        <div class="thanks-btn">
+          <a class="btn btn-outline" href="#">Подробнее о компании</a>
+        </div>
+  
+        <div class="carousel">
+          <div id="thanks-carousel" class="owl-carousel">
+            <div class="thanks-carousel-item">
+              <img src="img/blagodarnosti02.jpg" alt="">
+              <h4>АО «Большой Город»</h4>
+              <p>В 2017 году обратились в группу компаний ООО «НЬЮ РОУД»</p>
+            </div>
+            <div class="thanks-carousel-item">
+              <img src="img/blagodarnosti01.jpg" alt="">
+              <h4>ООО «АРД-СтройСПБ»</h4>
+              <p>В 2018 году обратились в группу компаний ООО «НЬЮ РОУД»</p>
+            </div>
+            <div class="thanks-carousel-item">
+              <img src="img/blagodarnosti02.jpg" alt="">
+              <h4>АО «Большой Город»</h4>
+              <p>В 2017 году обратились в группу компаний ООО «НЬЮ РОУД»</p>
+            </div>
+            <div class="thanks-carousel-item">
+              <img src="img/blagodarnosti01.jpg" alt="">
+              <h4>ООО «АРД-СтройСПБ»</h4>
+              <p>В 2018 году обратились в группу компаний ООО «НЬЮ РОУД»</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="companies">
+        <div>
+          <img src="img/puzat.png" alt="">
+        </div>
+        <div>
+          <img src="img/bonica.png" alt="">
+        </div>
+        <div>
+          <img src="img/telderi.png" alt="">
+        </div>
+        <div>
+          <img src="img/keysso.png" alt="">
+        </div>
+        <div>
+          <img src="img/smnews.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!--====================================================================
+================== OBJECTS-SECTION =====================================
+=====================================================================-->
+  <section class="objects-section">
+    <div class="container">
+      <h2>Сданные объекты</h2>
+      <p>За 14 лет работы наша компания построила 720 дорожно-строительных объектов.</p>
+      <div class="row">
+        <a href="#" class="col-xxl-3 col-lg-4 col-md-6 object-card">
+          <img src="img/objects02.jpg" alt="">
+          <h4>ЗАО Реттиг Варме РУС</h4>
+          <p>Асфальтирование</p>
+        </a>
+        <a href="#" class="col-xxl-3 col-lg-4 col-md-6 object-card">
+          <img src="img/objects03.jpg" alt="">
+          <h4>Комбинат питания Конкорд</h4>
+          <p>Ямочный ремонт</p>
+        </a>
+        <a href="#" class="col-xxl-3 col-lg-4 col-md-6 object-card">
+          <img src="img/objects01.jpg" alt="">
+          <h4>Церковь</h4>
+          <p>Благоустройство</p>
+        </a>
+        <a href="#" class="col-xxl-3 col-lg-4 col-md-6 object-card">
+          <img src="img/objects02.jpg" alt="">
+          <h4>ЗАО Реттиг Варме РУС</h4>
+          <p>Асфальтирование</p>
+        </a>
+        <a href="#" class="col-xxl-3 col-lg-4 col-md-6 object-card">
+          <img src="img/objects04.jpg" alt="">
+          <h4>Парковка метро Фили</h4>
+          <p>Благоустройство</p>
+        </a>
+        <a href="#" class="col-xxl-3 col-lg-4 col-md-6 object-card">
+          <img src="img/objects02.jpg" alt="">
+          <h4>ЗАО Реттиг Варме РУС</h4>
+          <p>Асфальтирование</p>
+        </a>
+        <a href="#" class="col-xxl-3 col-lg-4 col-md-6 object-card">
+          <img src="img/objects03.jpg" alt="">
+          <h4>Церковь</h4>
+          <p>Ямочный ремонт</p>
+        </a>
+        <a href="#" class="col-xxl-3 col-lg-4 col-md-6 object-card">
+          <img src="img/objects02.jpg" alt="">
+          <h4>ЗАО Реттиг Варме РУС</h4>
+          <p>Асфальтирование</p>
+        </a>
+      </div>
+
+      <div class="btn-container">
+        <a class="btn btn-outline" href="objects.html">Смотреть все проекты</a>
+      </div>
+
+    </div>
+  </section>
+
+
+<!--====================================================================
+================== QESTIONS-SECTION ====================================
+=====================================================================-->
+  <section class="qestions-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-xxl-6 qestions-title">
+          <h2>Остались вопросы?</h2>
+          <p class="mb-xxl-0">Мы с Вами свяжемся если поделитесь номерочком</p>
+        </div>
+        <div class="col-xxl-6">
+          <form action="" method="POST">
+            <div class="input">
+              <input type="tel" placeholder="Номер телефона">
+              <p>Нажимая кнопку Вы принимаете <a href="#">Соглашение об обработке персональных данных</a></p>
+            </div>
+            <div class="button">
+              <button type="button"><img src="img/arrow-right.svg" alt=""></button>
+            </div>
+          </form>
+        </div>
+        <img src="img/iphone.png" alt="">
+      </div>
+      
+    </div>
+  </section>
+
+
+<!--====================================================================
+================== FOOTER ==============================================
+=====================================================================-->
+  <footer class="footer">
+    <div class="container">
+      <a href="#" class="footer-logo">
+        <img src="img/logo-footer.png" alt="">
+      </a>
+      <div class="copyright">
+        <a href="#">Пользовательское соглашение </a> 
+        <p>RooM © 2022 Нью Роуд. Все права защищены.</p>
+      </div>
+      <div class="links-group1">
+        <a href="#">Услуги и цены</a>
+        <a href="#">О компании</a>
+        <a href="#">Почему мы</a>
+        <a href="#">Этапы работы</a>
+      </div>
+      <div class="links-group2">
+        <a href="#">Расчет стоимости</a>
+        <a href="#">Сертификаты и лицензии</a>
+        <a href="#">Сданные объекты</a>
+      </div>
+      <div class="footer-contacts">
+        <p>Режим работы:</p>
+        <span>Будние дни с 9:00 до 19:00</span>
+        <span>Выходные дни с 10:00 до 15:00</span>
+        <a href="tel:84994082423">
+          <img src="img/phone-icon.svg" alt="">
+          +7 (499) 408-24-23
+        </a>
+        <a href="malito:e-mail@newroud.ru">
+          <img src="img/email-icon.svg" alt="">
+          e-mail@newroud.ru
+        </a>
+      </div>
+      <div class="social">
+        <a href="#"><img src="img/vk.svg" alt=""></a>
+        <a href="#"><img src="img/telegramm.svg" alt=""></a>
+        <a href="#"><img src="img/watsapp.svg" alt=""></a>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <script src="OwlCarousel2/dist/owl.carousel.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/menu.js"></script>
+</body>
+</html>

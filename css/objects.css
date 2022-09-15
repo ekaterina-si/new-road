@@ -1,0 +1,225 @@
+.page-title {
+  padding: 6.375rem 0 12rem;
+  background-image: url(../img/question-bg.svg), linear-gradient(316.99deg, #003AAA 35.77%, #4F92E5 99.9%);
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: cover;
+}
+
+.page-title h1 {
+  color: #fff;
+}
+
+
+/*==========================================================
+======= OBJECTS-SECTION ====================================
+===========================================================*/
+.objects-section {
+  padding: 0 0 4rem;
+  margin-top: -10rem;
+}
+
+.object-card {
+  width: 397px;
+  padding: 1.5rem 1.75rem 1rem;
+  color: #1C2229;
+  transition: background 0.4s linear;
+  border-radius: 20px;
+}
+
+.object-card:hover {
+  color: #fff;
+  background: #3A6ACB;
+  box-shadow: 0px 12px 39px rgba(0, 11, 49, 0.14);
+}
+
+.objects-section .object-card:hover p {
+  color: #fff;
+}
+
+.objects-section .row img {
+  width: 100%;
+  height: 12rem;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+.objects-section .row h4 {
+  font-weight: 500;
+}
+
+.objects-section .row p {
+  color: #8A929E;
+}
+
+.objects-section .btn {
+  margin-top: 5rem;
+}
+
+.pagination {
+  margin-top: 2rem;
+}
+
+.pagination-item {
+  cursor: pointer;
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  padding: 4.75px;
+  text-align: center;
+  font-weight: 700;
+  background: #F5F7FC;
+  color: #B0C3EA;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  transition: all 0.4s ease;
+}
+
+.pagination-item:not(:last-child) {
+  margin-right: 0.5rem;
+}
+
+.pagination-item:hover {
+  color: #3A6ACB;
+  border: 1px solid #3A6ACB;
+}
+
+.pagination-item.active {
+  color: #fff;
+  background: #3A6ACB;
+}
+
+/*==========================================================
+======= FAQ-SECTION ========================================
+==========================================================*/
+.faq-section {
+  padding: 7.5rem 0;
+}
+
+.faq-section h2 {
+  margin-bottom: 4rem;
+}
+
+.faq-section-img {
+  max-width: 40.25rem;
+  height: 40.25rem;
+  position: relative;
+}
+
+.faq-section-img .bg {
+  width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 20px 20px 20px 322px;
+}
+
+.faq-section-img .icon {
+  width: 175px;
+  position: absolute;
+  bottom: -12px;
+  left: 1px;
+}
+
+/*======== accordion =====================================*/
+.accordion-button:not(.collapsed) {
+  color: inherit;
+}
+
+.accordion-button:not(.collapsed) {
+  background: none;
+  box-shadow: none;
+}
+
+.accordion-button {
+  font-weight: 700;
+}
+
+.accordion-body,
+.accordion-button {
+  padding: 1.25rem 1.25rem 1.25rem 2rem;
+}
+
+.accordion-body {
+  font-weight: 400;
+  padding-top: 10px;
+}
+
+.accordion-button:focus {
+  border-color: transparent;
+  box-shadow: none;
+}
+
+.accordion-item:first-of-type:hover,
+.accordion-item:last-of-type:hover,
+.accordion-item:not(:first-of-type):hover,
+.accordion-item:hover {
+  border: 1px solid #3A6ACB;
+}
+
+.accordion-item:first-of-type,
+.accordion-item:last-of-type,
+.accordion-item {
+  border: 1px solid #E2E9F7;
+  border-radius: 38px;
+  overflow: hidden;
+  transition: border 0.3s ease;
+}
+
+.accordion-item:not(:last-child) {
+  margin-bottom: 0.25rem;
+}
+
+.accordion-item:not(:first-of-type) {
+  border-top: 1px solid #E2E9F7;
+}
+
+.accordion-button::after {
+  width: 2.25rem;
+  height: 2.25rem;
+  background-color: #4E91E4;
+  border-radius: 50%;
+  background-image: url("data:image/svg+xml,%3Csvg width='22' height='22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 21V1M1 11h20' stroke='%23fff' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E");
+  transform: rotate(-90deg);
+  background-size: 22px;
+  background-position: center;
+  transition: all 0.15s ease;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url("data:image/svg+xml,%3Csvg width='22' height='22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 21V1M1 11h20' stroke='%23fff' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E");
+  transform: rotate(-45deg);
+}
+
+.accordion-button:hover::after {
+  background-color: #3A6ACB;
+}
+
+
+
+.owl-stage {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+
+/*==========================================================
+======= @ MEDIA ============================================
+===========================================================*/
+/*============================================
+======= < 567px ==============================
+============================================*/
+@media (max-width: 576px) {
+  .accordion-body,
+  .accordion-button {
+    padding: 0.7rem 0.7rem 0.7rem 1.1rem;
+  }
+
+  .accordion-item:first-of-type,
+  .accordion-item:last-of-type,
+  .accordion-item {
+    border-radius: 32px;
+  }
+}

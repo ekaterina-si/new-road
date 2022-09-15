@@ -1,0 +1,229 @@
+/*==========================================================
+======= HOME-SECTION =======================================
+==========================================================*/
+.play-btn {
+  position: absolute;
+  top: 48%;
+  right: 48%;
+  transform: translate(50%, -50%);
+  width: 136px;
+  height: 136px;
+  background-color: #4E91E4;
+  border-radius: 50%;
+  border: none;
+  background-image: url("data:image/svg+xml,%3Csvg width='38' height='44' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4.5 1.4C2.38.25 0 1.7 0 4v36.5c0 2 2.38 3.68 4.5 2.48L36 24.8c2-1.2 2-4.03 0-5.21L4.5 1.4z' fill='%23fff'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: 53% center;
+  background-size: 29.4%;
+  transition: background-color 0.4s ease;
+}
+
+.play-btn:hover {
+  background-color: #EC2941;
+}
+
+.play-btn.play {
+  background-image: url("data:image/svg+xml,%3Csvg width='38' height='43' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 3a3 3 0 0 1 3-3h10a3 3 0 0 1 3 3v37a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V3zM22 3a3 3 0 0 1 3-3h10a3 3 0 0 1 3 3v37a3 3 0 0 1-3 3H25a3 3 0 0 1-3-3V3z' fill='%23fff'/%3E%3C/svg%3E");
+  background-position: center;
+}
+
+/*==========================================================
+======= HOW-SECTION ========================================
+==========================================================*/
+.how-section {
+  background: #F5F7FC;
+  padding: 5.9rem 0 3rem;
+}
+
+.how-section h6 {
+  font-weight: 700;
+}
+
+.how-section ul,
+.how-section p {
+  font-weight: 400;
+}
+
+.how-section h2 {
+  margin-bottom: 2rem;
+}
+
+
+/*==========================================================
+======= WHY-SECTION ========================================
+==========================================================*/
+.why-section {
+  background: #F5F7FC;
+  padding: 2.5rem 0 6rem;
+}
+
+.why-section h2 + p {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 0;
+  color: #444656;
+}
+
+
+/*==========================================================
+======= FAQ-SECTION ========================================
+==========================================================*/
+.faq-section {
+  padding: 7.5rem 0;
+}
+
+.faq-section h2 {
+  margin-bottom: 4rem;
+}
+
+.faq-section-img {
+  max-width: 40.25rem;
+  height: 40.25rem;
+  position: relative;
+}
+
+.faq-section-img .bg {
+  width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 20px 20px 20px 322px;
+}
+
+.faq-section-img .icon {
+  width: 175px;
+  position: absolute;
+  bottom: -12px;
+  left: 1px;
+}
+
+/*======== accordion =====================================*/
+.accordion-button:not(.collapsed) {
+  color: inherit;
+}
+
+.accordion-button:not(.collapsed) {
+  background: none;
+  box-shadow: none;
+}
+
+.accordion-button {
+  font-weight: 700;
+}
+
+.accordion-body,
+.accordion-button {
+  padding: 1.25rem 1.25rem 1.25rem 2rem;
+}
+
+.accordion-body {
+  font-weight: 400;
+  padding-top: 10px;
+}
+
+.accordion-button:focus {
+  border-color: transparent;
+  box-shadow: none;
+}
+
+.accordion-item:first-of-type:hover,
+.accordion-item:last-of-type:hover,
+.accordion-item:not(:first-of-type):hover,
+.accordion-item:hover {
+  border: 1px solid #3A6ACB;
+}
+
+.accordion-item:first-of-type,
+.accordion-item:last-of-type,
+.accordion-item {
+  border: 1px solid #E2E9F7;
+  border-radius: 38px;
+  overflow: hidden;
+  transition: border 0.3s ease;
+}
+
+.accordion-item:not(:last-child) {
+  margin-bottom: 0.25rem;
+}
+
+.accordion-item:not(:first-of-type) {
+  border-top: 1px solid #E2E9F7;
+}
+
+.accordion-button::after {
+  width: 2.25rem;
+  height: 2.25rem;
+  background-color: #4E91E4;
+  border-radius: 50%;
+  background-image: url("data:image/svg+xml,%3Csvg width='22' height='22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 21V1M1 11h20' stroke='%23fff' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E");
+  transform: rotate(-90deg);
+  background-size: 22px;
+  background-position: center;
+  transition: all 0.15s ease;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url("data:image/svg+xml,%3Csvg width='22' height='22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 21V1M1 11h20' stroke='%23fff' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E");
+  transform: rotate(-45deg);
+}
+
+.accordion-button:hover::after {
+  background-color: #3A6ACB;
+}
+
+
+
+
+/*==========================================================
+======= @ MEDIA ============================================
+==========================================================*/
+/*============================================
+======= < 1200px =============================
+============================================*/
+@media (max-width: 1200px) {
+  .home-section {
+    padding-top: 121px;
+  }
+
+  .home-section .bg-img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 0;
+    top: 0;
+    z-index: -1;
+  }
+
+  .home-section .gradient {
+    background: linear-gradient(0deg, rgba(0, 22, 66, 0.92), rgba(0, 22, 66, 0.92))
+  }
+
+  .play-btn {
+    width: 80px;
+    height: 80px;
+    top: 70%;
+  }
+
+  .home-section h1+p {
+    color: #C4D3F0;
+  }
+
+  .home-section p {
+    font-size: 14px;
+  }
+}
+/*============================================
+======= < 567px ==============================
+============================================*/
+@media (max-width: 576px) {
+  .accordion-body,
+  .accordion-button {
+    padding: 0.7rem 0.7rem 0.7rem 1.1rem;
+  }
+
+  .accordion-item:first-of-type,
+  .accordion-item:last-of-type,
+  .accordion-item {
+    border-radius: 32px;
+  }
+}
